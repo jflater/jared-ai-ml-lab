@@ -1,0 +1,5 @@
+# Ignore all dotfiles and dot-directories
+.*
+
+# But track this file
+!.gitignore
