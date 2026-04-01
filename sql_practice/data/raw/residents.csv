@@ -1,0 +1,151 @@
+resident_id,facility_id,first_name,last_name,age,gender,admission_date,discharge_date,care_level,monthly_rate
+1,4,Elizabeth,Williams,100,F,2026-02-20 14:14:29.331267,,Skilled Nursing,5500
+2,5,Linda,Rodriguez,74,F,2025-05-26 14:14:29.331267,2025-11-08 14:14:29.331267,Skilled Nursing,3500
+3,3,Mary,Jones,101,M,2025-04-11 14:14:29.331267,,Independent,5500
+4,5,Mary,Davis,73,M,2025-08-17 14:14:29.331267,,Memory Care,5500
+5,5,Elizabeth,Smith,88,M,2025-08-02 14:14:29.331267,,Skilled Nursing,7500
+6,2,Elizabeth,Jones,99,M,2025-07-22 14:14:29.331267,,Memory Care,6500
+7,3,James,Williams,99,F,2025-06-09 14:14:29.331267,2025-11-20 14:14:29.331267,Memory Care,4500
+8,3,Elizabeth,Smith,100,M,2025-05-21 14:14:29.331267,,Independent,6500
+9,3,Patricia,Brown,82,M,2026-03-11 14:14:29.331267,,Skilled Nursing,6500
+10,5,Linda,Jones,96,F,2026-01-03 14:14:29.331267,,Assisted,5500
+11,4,Michael,Miller,88,M,2025-05-13 14:14:29.331267,2025-11-11 14:14:29.331267,Independent,6500
+12,3,Barbara,Smith,87,M,2026-01-26 14:14:29.331267,,Assisted,3500
+13,5,Elizabeth,Williams,96,M,2025-11-01 14:14:29.331267,,Memory Care,5500
+14,2,Robert,Johnson,101,M,2025-04-15 14:14:29.331267,,Memory Care,3500
+15,4,Mary,Rodriguez,76,M,2025-04-14 14:14:29.331267,,Independent,4500
+16,2,Patricia,Garcia,77,F,2025-05-16 14:14:29.331267,,Independent,5500
+17,4,Barbara,Williams,87,M,2025-07-19 14:14:29.331267,,Assisted,4500
+18,5,Michael,Davis,89,M,2025-07-27 14:14:29.331267,,Skilled Nursing,5500
+19,1,Barbara,Davis,99,M,2025-12-13 14:14:29.331267,,Assisted,7500
+20,4,Elizabeth,Johnson,94,M,2026-02-01 14:14:29.331267,,Independent,6500
+21,2,James,Garcia,81,M,2025-04-12 14:14:29.331267,,Assisted,7500
+22,5,Mary,Miller,84,F,2026-01-11 14:14:29.331267,2026-08-14 14:14:29.331267,Independent,4500
+23,4,Mary,Johnson,89,M,2025-07-09 14:14:29.331267,,Assisted,6500
+24,1,James,Johnson,86,F,2026-02-25 14:14:29.331267,,Independent,5500
+25,1,Linda,Smith,77,F,2026-03-24 14:14:29.331267,,Independent,6500
+26,3,John,Davis,83,M,2026-01-03 14:14:29.331267,2026-03-14 14:14:29.331267,Independent,3500
+27,3,Patricia,Smith,100,M,2025-10-30 14:14:29.331267,2026-08-04 14:14:29.331267,Skilled Nursing,6500
+28,2,Mary,Rodriguez,76,M,2025-07-20 14:14:29.331267,,Assisted,3500
+29,4,Robert,Garcia,83,M,2025-11-14 14:14:29.331267,,Assisted,6500
+30,4,Mary,Miller,76,F,2026-01-25 14:14:29.331267,,Assisted,3500
+31,3,Barbara,Miller,73,M,2025-08-19 14:14:29.331267,2026-05-19 14:14:29.331267,Independent,4500
+32,4,Mary,Williams,71,M,2025-04-02 14:14:29.331267,,Assisted,7500
+33,4,Mary,Johnson,92,M,2025-06-19 14:14:29.331267,,Assisted,5500
+34,1,John,Rodriguez,78,M,2026-03-22 14:14:29.331267,,Independent,6500
+35,3,John,Davis,95,M,2025-11-01 14:14:29.331267,,Memory Care,7500
+36,5,Michael,Miller,83,M,2025-09-20 14:14:29.331267,,Independent,5500
+37,3,Linda,Rodriguez,80,F,2025-08-19 14:14:29.331267,,Assisted,5500
+38,5,Robert,Brown,69,F,2025-06-17 14:14:29.331267,,Independent,3500
+39,1,Mary,Brown,99,M,2025-07-18 14:14:29.331267,,Memory Care,4500
+40,2,Mary,Smith,76,M,2025-09-18 14:14:29.331267,,Independent,4500
+41,4,Patricia,Davis,89,M,2025-05-21 14:14:29.331267,,Assisted,7500
+42,1,John,Williams,85,F,2025-05-16 14:14:29.331267,,Memory Care,4500
+43,4,Robert,Miller,100,M,2025-10-10 14:14:29.331267,,Skilled Nursing,6500
+44,2,Michael,Johnson,87,F,2025-05-18 14:14:29.331267,,Assisted,4500
+45,2,Linda,Johnson,80,M,2025-09-29 14:14:29.331267,,Memory Care,7500
+46,1,James,Miller,78,M,2025-09-22 14:14:29.331267,,Memory Care,4500
+47,2,Linda,Garcia,95,M,2026-02-02 14:14:29.331267,2026-03-14 14:14:29.331267,Skilled Nursing,6500
+48,5,Barbara,Williams,69,M,2025-08-12 14:14:29.331267,,Independent,3500
+49,2,Mary,Rodriguez,99,F,2025-04-21 14:14:29.331267,,Independent,7500
+50,4,Michael,Garcia,87,F,2025-11-20 14:14:29.331267,,Assisted,3500
+51,4,Barbara,Garcia,93,M,2025-12-29 14:14:29.331267,2026-02-27 14:14:29.331267,Skilled Nursing,3500
+52,4,Robert,Smith,75,M,2025-06-01 14:14:29.331267,,Independent,3500
+53,4,James,Brown,82,F,2025-10-09 14:14:29.331267,,Skilled Nursing,5500
+54,5,John,Garcia,76,F,2025-05-09 14:14:29.331267,,Independent,5500
+55,3,Michael,Garcia,73,F,2026-01-06 14:14:29.331267,2026-06-06 14:14:29.331267,Memory Care,3500
+56,1,Michael,Jones,74,F,2025-08-27 14:14:29.331267,,Independent,7500
+57,4,Mary,Smith,81,M,2026-02-14 14:14:29.331267,,Skilled Nursing,6500
+58,2,Elizabeth,Davis,71,F,2026-02-09 14:14:29.331267,,Memory Care,6500
+59,4,Michael,Jones,77,M,2025-10-01 14:14:29.331267,,Memory Care,4500
+60,2,Patricia,Jones,73,F,2026-01-19 14:14:29.331267,,Memory Care,7500
+61,2,James,Miller,91,F,2025-07-06 14:14:29.331267,,Skilled Nursing,5500
+62,4,James,Brown,66,F,2026-03-25 14:14:29.331267,,Assisted,3500
+63,5,Patricia,Garcia,69,F,2025-05-04 14:14:29.331267,,Assisted,4500
+64,2,Patricia,Brown,93,F,2025-04-22 14:14:29.331267,,Assisted,6500
+65,2,Patricia,Williams,101,M,2026-03-03 14:14:29.331267,2026-11-08 14:14:29.331267,Skilled Nursing,5500
+66,4,James,Miller,83,M,2025-07-24 14:14:29.331267,,Memory Care,5500
+67,2,Linda,Davis,72,F,2025-08-25 14:14:29.331267,,Assisted,3500
+68,2,James,Brown,65,F,2025-05-09 14:14:29.331267,,Skilled Nursing,6500
+69,4,Elizabeth,Johnson,86,M,2025-07-27 14:14:29.331267,2025-10-15 14:14:29.331267,Assisted,7500
+70,4,Mary,Williams,81,F,2025-05-20 14:14:29.331267,2025-12-09 14:14:29.331267,Independent,5500
+71,1,Barbara,Smith,71,F,2025-10-10 14:14:29.331267,,Assisted,3500
+72,5,Linda,Davis,89,M,2025-08-19 14:14:29.331267,2025-12-25 14:14:29.331267,Assisted,7500
+73,5,John,Williams,68,F,2025-11-17 14:14:29.331267,,Memory Care,6500
+74,2,Barbara,Miller,100,F,2026-02-18 14:14:29.331267,,Skilled Nursing,5500
+75,5,Mary,Jones,70,M,2025-10-02 14:14:29.331267,,Memory Care,7500
+76,2,Elizabeth,Jones,95,M,2025-06-21 14:14:29.331267,,Memory Care,7500
+77,1,Elizabeth,Miller,83,M,2025-10-05 14:14:29.331267,,Memory Care,7500
+78,4,John,Rodriguez,91,F,2025-09-27 14:14:29.331267,,Memory Care,5500
+79,4,Linda,Jones,74,M,2025-07-15 14:14:29.331267,,Memory Care,5500
+80,4,Patricia,Smith,90,M,2026-03-08 14:14:29.331267,,Assisted,4500
+81,5,Linda,Smith,83,M,2025-08-13 14:14:29.331267,,Memory Care,6500
+82,1,Elizabeth,Johnson,67,M,2026-03-24 14:14:29.331267,2026-04-30 14:14:29.331267,Memory Care,3500
+83,5,James,Garcia,77,M,2026-03-14 14:14:29.331267,,Skilled Nursing,7500
+84,5,Mary,Rodriguez,92,M,2026-02-24 14:14:29.331267,,Independent,4500
+85,1,John,Davis,84,F,2025-05-05 14:14:29.331267,,Assisted,3500
+86,1,Mary,Jones,92,F,2026-02-04 14:14:29.331267,,Assisted,4500
+87,1,Robert,Smith,72,M,2026-02-18 14:14:29.331267,,Assisted,5500
+88,1,Robert,Miller,65,M,2025-06-25 14:14:29.331267,,Memory Care,7500
+89,4,Linda,Jones,67,M,2025-12-28 14:14:29.331267,,Memory Care,3500
+90,3,Elizabeth,Garcia,77,F,2025-08-02 14:14:29.331267,2026-03-14 14:14:29.331267,Memory Care,3500
+91,3,Elizabeth,Miller,92,F,2025-06-21 14:14:29.331267,2026-02-05 14:14:29.331267,Skilled Nursing,3500
+92,1,Patricia,Williams,89,F,2025-11-21 14:14:29.331267,,Independent,3500
+93,3,Patricia,Williams,97,F,2025-10-10 14:14:29.331267,,Memory Care,3500
+94,3,Patricia,Jones,70,F,2025-08-15 14:14:29.331267,,Independent,4500
+95,1,James,Garcia,96,F,2026-02-20 14:14:29.331267,,Skilled Nursing,7500
+96,3,Barbara,Rodriguez,85,F,2026-03-17 14:14:29.331267,,Assisted,5500
+97,5,Michael,Jones,80,F,2026-01-09 14:14:29.331267,,Memory Care,5500
+98,2,Barbara,Smith,85,F,2025-07-20 14:14:29.331267,,Independent,5500
+99,2,Mary,Brown,75,M,2026-03-15 14:14:29.331267,,Independent,5500
+100,1,Barbara,Jones,101,M,2025-09-12 14:14:29.331267,,Memory Care,4500
+101,4,James,Jones,100,M,2025-04-27 14:14:29.331267,,Assisted,6500
+102,1,Mary,Miller,99,M,2025-07-25 14:14:29.331267,,Assisted,7500
+103,4,Barbara,Brown,83,F,2025-04-15 14:14:29.331267,,Assisted,3500
+104,2,James,Smith,84,F,2025-09-07 14:14:29.331267,,Skilled Nursing,6500
+105,1,Michael,Jones,82,M,2025-10-21 14:14:29.331267,,Independent,5500
+106,5,Barbara,Miller,78,F,2025-08-14 14:14:29.331267,2026-05-15 14:14:29.331267,Independent,6500
+107,3,James,Garcia,79,M,2025-05-02 14:14:29.331267,,Independent,7500
+108,4,Patricia,Jones,95,F,2025-07-16 14:14:29.331267,,Skilled Nursing,3500
+109,3,Elizabeth,Brown,65,M,2026-01-14 14:14:29.331267,,Independent,3500
+110,3,Patricia,Johnson,67,F,2025-09-07 14:14:29.331267,,Skilled Nursing,7500
+111,1,Elizabeth,Brown,80,F,2025-07-16 14:14:29.331267,2025-11-18 14:14:29.331267,Assisted,7500
+112,3,John,Williams,87,M,2026-02-28 14:14:29.331267,2026-05-03 14:14:29.331267,Memory Care,5500
+113,5,John,Smith,75,F,2025-12-10 14:14:29.331267,,Independent,3500
+114,3,John,Davis,76,M,2025-10-18 14:14:29.331267,,Independent,6500
+115,1,Michael,Jones,74,M,2026-02-22 14:14:29.331267,2026-07-28 14:14:29.331267,Assisted,4500
+116,5,Patricia,Brown,96,M,2025-11-19 14:14:29.331267,,Memory Care,4500
+117,2,Elizabeth,Davis,80,M,2025-06-11 14:14:29.331267,2025-08-21 14:14:29.331267,Skilled Nursing,7500
+118,3,James,Miller,72,F,2025-08-12 14:14:29.331267,,Memory Care,5500
+119,1,Mary,Johnson,76,F,2025-06-09 14:14:29.331267,,Assisted,4500
+120,2,James,Smith,88,F,2025-08-03 14:14:29.331267,,Assisted,3500
+121,2,Mary,Brown,92,M,2026-01-11 14:14:29.331267,,Memory Care,7500
+122,4,Robert,Davis,72,F,2025-12-30 14:14:29.331267,,Skilled Nursing,6500
+123,5,James,Johnson,92,M,2025-08-11 14:14:29.331267,,Skilled Nursing,7500
+124,3,Barbara,Williams,100,F,2026-01-23 14:14:29.331267,,Independent,6500
+125,1,Barbara,Smith,90,F,2025-11-04 14:14:29.331267,,Skilled Nursing,7500
+126,4,Linda,Smith,72,F,2026-01-22 14:14:29.331267,,Memory Care,7500
+127,5,Patricia,Williams,92,M,2025-10-20 14:14:29.331267,,Assisted,7500
+128,4,Mary,Jones,92,F,2025-10-01 14:14:29.331267,,Independent,6500
+129,5,Mary,Williams,101,F,2025-07-20 14:14:29.331267,,Independent,6500
+130,5,Patricia,Smith,100,M,2025-06-08 14:14:29.331267,2026-02-27 14:14:29.331267,Assisted,7500
+131,3,Michael,Smith,91,F,2025-12-15 14:14:29.331267,,Skilled Nursing,4500
+132,5,Linda,Davis,81,M,2025-12-07 14:14:29.331267,,Assisted,5500
+133,4,Michael,Johnson,73,F,2025-05-15 14:14:29.331267,2025-10-01 14:14:29.331267,Skilled Nursing,5500
+134,5,Michael,Williams,97,M,2025-04-23 14:14:29.331267,,Assisted,5500
+135,3,Michael,Johnson,84,M,2025-05-25 14:14:29.331267,2025-12-19 14:14:29.331267,Memory Care,6500
+136,3,Patricia,Williams,77,F,2025-06-16 14:14:29.331267,,Skilled Nursing,6500
+137,4,Michael,Miller,92,M,2026-02-14 14:14:29.331267,,Memory Care,4500
+138,2,Barbara,Smith,93,M,2025-06-19 14:14:29.331267,,Independent,5500
+139,2,John,Davis,77,M,2026-03-13 14:14:29.331267,,Assisted,5500
+140,5,Robert,Johnson,99,M,2025-11-01 14:14:29.331267,,Independent,7500
+141,1,Mary,Williams,70,M,2026-01-29 14:14:29.331267,,Independent,6500
+142,5,Mary,Rodriguez,82,M,2025-05-01 14:14:29.331267,,Independent,5500
+143,4,Robert,Miller,69,F,2025-10-13 14:14:29.331267,,Independent,4500
+144,4,Patricia,Brown,89,M,2025-10-11 14:14:29.331267,,Assisted,4500
+145,4,James,Jones,66,M,2026-01-29 14:14:29.331267,2026-07-31 14:14:29.331267,Independent,5500
+146,4,Patricia,Johnson,74,F,2025-11-24 14:14:29.331267,,Assisted,6500
+147,4,Mary,Davis,94,F,2025-12-25 14:14:29.331267,2026-04-02 14:14:29.331267,Assisted,4500
+148,3,Mary,Brown,69,F,2025-08-05 14:14:29.331267,,Memory Care,7500
+149,2,Robert,Rodriguez,97,F,2026-01-07 14:14:29.331267,,Skilled Nursing,4500
+150,4,Michael,Jones,65,F,2025-04-04 14:14:29.331267,,Skilled Nursing,3500

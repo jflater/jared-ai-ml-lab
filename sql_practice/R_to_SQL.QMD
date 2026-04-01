@@ -1,0 +1,40 @@
+---
+title: "R to SQL Learning"
+format: html
+---
+
+
+
+## Window Functions
+
+### R Output
+
+R version:
+
+```{bash}
+cd /Users/jaredflater/Projects/jared-ai-ml-lab/sql_practice && cat 01_window_window_functions.r 
+```
+```{bash}
+cd /Users/jaredflater/Projects/jared-ai-ml-lab/sql_practice && Rscript 01_window_window_functions.r
+```
+
+### SQL
+
+```{bash}
+cd /Users/jaredflater/Projects/jared-ai-ml-lab/sql_practice && cat 01_window_functions.sql
+```
+```{bash}
+cd /Users/jaredflater/Projects/jared-ai-ml-lab/sql_practice && duckdb lcs_data.duckdb < 01_window_functions.sql
+```
+
+## Rank Care Events
+
+### R Output
+```{bash}
+cd /Users/jaredflater/Projects/jared-ai-ml-lab/sql_practice && Rscript 02_rank_care_events.r
+```
+
+### SQL
+```{bash}
+cd /Users/jaredflater/Projects/jared-ai-ml-lab/sql_practice && duckdb lcs_data.duckdb < 02_rank_care_events.sql
+```
