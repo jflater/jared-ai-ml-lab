@@ -4,7 +4,7 @@ A portfolio project demonstrating analytical SQL and data engineering skills usi
 
 ## Motivation
 
-I built this project to practice SQL patterns commonly needed in data engineering and analytics roles — window functions, CTEs, ranking, and multi-table joins — applied to a domain I find genuinely interesting: operational data from long-term care facilities. The dataset mirrors the kinds of questions a care operations team or a data platform team would actually ask.
+I built this project to practice SQL patterns commonly needed in data engineering and analytics roles — window functions, CTEs, ranking, and multi-table joins — applied to a SYNTHETIC operational data from long-term care facilities. 
 
 ## Tech Stack
 
