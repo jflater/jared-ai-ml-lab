@@ -1,58 +1,47 @@
-# SQL Practice — LCS Senior Living Data
-
-A portfolio project demonstrating analytical SQL and data engineering skills using a synthetic dataset modeled after a senior living operations context (residents, care events, billing, and facility management). Built with DuckDB, Python, and R.
-
-## Motivation
-
-I built this project to practice SQL patterns commonly needed in data engineering and analytics roles — window functions, CTEs, ranking, and multi-table joins — applied to a SYNTHETIC operational data from long-term care facilities. 
-
-## Tech Stack
-
-| Tool | Role |
-|------|------|
-| **DuckDB** | Local analytical database engine |
-| **Python** | Synthetic data generation (`generate_lcs_data.py`) |
-| **SQL** | Analytical queries (window functions, CTEs, rankings) |
-| **R** | R-equivalent translations for each SQL exercise |
-| **Quarto** | Side-by-side R vs. SQL comparison document |
-
-## Dataset Schema
-
-Six tables loaded into a `raw` schema in DuckDB:
-
-```
-raw.facilities    — facility_id, name, location, capacity, type
-raw.residents     — resident_id, facility_id, name, age, care_level, admission_date, discharge_date
-raw.staff         — staff_id, facility_id, role, hire_date
-raw.admissions    — admission records linking residents to facilities
-raw.care_events   — care_event_id, resident_id, event_type, staff_id, duration_minutes, event_date
-raw.billing       — billing_id, resident_id, base_charge, additional_services, total_charge, payment_status
-```
-
-Data is generated via `generate_lcs_data.py` and loaded into DuckDB using `load_lcs.data.sql`.
-
-## SQL Exercises
-
-### `01_window_functions.sql`
-**Question:** Which residents have been here longest? How do stays compare across facilities?
-
-Demonstrates:
-- `ROW_NUMBER()`, `RANK()`, and `LAG()` over partitioned windows
-- `DATEDIFF` with `COALESCE` to handle current (non-discharged) residents
-- Cumulative sums (`SUM(...) OVER (... ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)`)
-- Facility-level aggregation on top of window-computed fields
-
-### `02_rank_care_events.sql`
-**Question:** Which residents require the most staff attention?
-
-Demonstrates:
-- `DENSE_RANK()` over aggregated counts
-- Grouping before ranking to identify high-utilization residents
-
-### `03_ctes.sql`
-**Question:** Who are the most complex, highest-revenue residents?
-
-
+| resident_id | first_name | last_name | facility_id | care_event_count | num_event_types | avg_event_duration |
+|------------:|------------|-----------|------------:|-----------------:|----------------:|-------------------:|
+| 2           | Linda      | Rodriguez | 5           | 486              | 6               | 59.60699588477366  |
+| 13          | Elizabeth  | Williams  | 5           | 712              | 6               | 62.31601123595506  |
+| 29          | Robert     | Garcia    | 4           | 321              | 6               | 60.794392523364486 |
+| 30          | Mary       | Miller    | 4           | 145              | 6               | 61.02068965517241  |
+| 40          | Mary       | Smith     | 2           | 570              | 6               | 61.540350877192985 |
+| 43          | Robert     | Miller    | 4           | 550              | 6               | 60.89090909090909  |
+| 46          | James      | Miller    | 1           | 436              | 6               | 62.81880733944954  |
+| 61          | James      | Miller    | 2           | 1325             | 6               | 60.62641509433962  |
+| 68          | James      | Brown     | 2           | 1604             | 6               | 62.162718204488776 |
+| 78          | John       | Rodriguez | 4           | 784              | 6               | 61.827806122448976 |
+| 16          | Patricia   | Garcia    | 2           | 1118             | 6               | 60.9391771019678   |
+| 24          | James      | Johnson   | 1           | 105              | 6               | 64.24761904761905  |
+| 28          | Mary       | Rodriguez | 2           | 1223             | 6               | 62.23712183156174  |
+| 34          | John       | Rodriguez | 1           | 39               | 6               | 60.23076923076923  |
+| 39          | Mary       | Brown     | 1           | 786              | 6               | 63.2735368956743   |
+| 52          | Robert     | Smith     | 4           | 1498             | 6               | 61.765687583444596 |
+| 55          | Michael    | Garcia    | 3           | 683              | 6               | 62.496339677891655 |
+| 63          | Patricia   | Garcia    | 5           | 1608             | 6               | 61.582089552238806 |
+| 67          | Linda      | Davis     | 2           | 1005             | 6               | 61.79402985074627  |
+| 69          | Elizabeth  | Johnson   | 4           | 169              | 6               | 59.73372781065089  |
+| 72          | Linda      | Davis     | 5           | 409              | 6               | 66.52322738386309  |
+| 73          | John       | Williams  | 5           | 618              | 6               | 62.35436893203884  |
+| 74          | Barbara    | Miller    | 2           | 80               | 6               | 68.6               |
+| 77          | Elizabeth  | Miller    | 1           | 766              | 6               | 60.67624020887728  |
+| 82          | Elizabeth  | Johnson   | 1           | 79               | 6               | 64.15189873417721  |
+| 111         | Elizabeth  | Brown     | 1           | 533              | 6               | 62.29455909943715  |
+| 116         | Patricia   | Brown     | 5           | 310              | 6               | 63.83870967741935  |
+| 119         | Mary       | Johnson   | 1           | 687              | 6               | 62.47598253275109  |
+| 133         | Michael    | Johnson   | 4           | 625              | 6               | 58.856             |
+| 147         | Mary       | Davis     | 4           | 346              | 6               | 62.676300578034684 |
+| resident_id | length_of_stay | resident_status  |
+|------------:|---------------:|------------------|
+| 1           | 40             | current_resident |
+| 2           | 166            | discharged       |
+| 3           | 355            | current_resident |
+| 4           | 227            | current_resident |
+| 5           | 242            | current_resident |
+| 6           | 253            | current_resident |
+| 7           | 164            | discharged       |
+| 8           | 315            | current_resident |
+| 9           | 21             | current_resident |
+| 10          | 88             | current_resident |
 | resident_id | first_name | last_name | facility_id | complexity_score |
 |------------:|------------|-----------|------------:|-----------------:|
 | 3           | Mary       | Jones     | 3           | 22.01            |
@@ -117,29 +106,3 @@ Demonstrates:
 | 14          | Robert     | Johnson   | 2           | 14.49            | 56780         | Pending        |
 | 54          | John       | Garcia    | 5           | 14.42            | 75646         | Pending        |
 | 107         | James      | Garcia    | 3           | 14.26            | 97624         | Pending        |
-
-
-Demonstrates:
-- Multi-step CTE chains (4 CTEs: `resident_care_frequency`, `resident_tenure`, `resident_complexity`, `billing_summary`)
-- A composite complexity score built from care frequency, event diversity, and length of stay
-- Joining complexity scores to billing data to surface high-need, high-revenue residents
-- Payment status logic using conditional aggregation (`MAX(CASE WHEN ...)`)
-
-## R-to-SQL Translation
-
-Each `.sql` file has a companion `.r` file implementing the same logic using `dplyr` and `dbplyr`. The `R_to_SQL.QMD` Quarto document renders them side-by-side, which illustrates how the same analytical intent maps across two paradigms — useful for teams that operate in both environments.
-
-## Setup
-
-```bash
-# Generate synthetic data
-python generate_lcs_data.py
-
-# Load into DuckDB
-duckdb lcs_data.duckdb < load_lcs.data.sql
-
-# Run a query
-duckdb lcs_data.duckdb < 03_ctes.sql
-```
-
-
