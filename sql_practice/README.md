@@ -85,6 +85,9 @@ Demonstrates:
 | 14          | Robert     | Johnson   | 2           | 14.49            |
 | 54          | John       | Garcia    | 5           | 14.42            |
 | 107         | James      | Garcia    | 3           | 14.26            |
+
+----
+
 | resident_id | first_name | last_name | facility_id | complexity_score | total_billing | payment_status |
 |------------:|------------|-----------|------------:|-----------------:|--------------:|----------------|
 | 3           | Mary       | Jones     | 3           | 22.01            | 82738         | Overdue        |
