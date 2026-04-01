@@ -1,0 +1,41 @@
+staff_id,facility_id,first_name,last_name,role,hire_date
+1,1,Michael,Garcia,CNA,2025-06-17 14:14:29.331267
+2,4,Lisa,Williams,LPN,2025-08-16 14:14:29.331267
+3,3,Sarah,Williams,LPN,2025-08-21 14:14:29.331267
+4,4,Sarah,Williams,Dietary,2026-02-02 14:14:29.331267
+5,4,Michael,Garcia,Housekeeping,2025-07-15 14:14:29.331267
+6,4,Sarah,Garcia,CNA,2025-09-21 14:14:29.331267
+7,4,Michael,Jones,Dietary,2025-07-12 14:14:29.331267
+8,5,John,Smith,LPN,2026-03-16 14:14:29.331267
+9,5,Michael,Jones,LPN,2026-02-17 14:14:29.331267
+10,2,Michael,Jones,CNA,2025-08-12 14:14:29.331267
+11,1,Jennifer,Garcia,Care Coordinator,2025-12-13 14:14:29.331267
+12,4,Michael,Williams,RN,2025-12-05 14:14:29.331267
+13,2,Michael,Johnson,LPN,2025-08-05 14:14:29.331267
+14,1,Lisa,Smith,Housekeeping,2025-04-25 14:14:29.331267
+15,3,John,Garcia,Housekeeping,2025-05-16 14:14:29.331267
+16,5,Jennifer,Williams,LPN,2026-02-17 14:14:29.331267
+17,1,Lisa,Johnson,Care Coordinator,2025-11-01 14:14:29.331267
+18,3,David,Johnson,Care Coordinator,2025-08-18 14:14:29.331267
+19,1,John,Garcia,Dietary,2025-04-21 14:14:29.331267
+20,5,John,Brown,Housekeeping,2025-03-31 14:14:29.331267
+21,5,David,Smith,Dietary,2025-09-16 14:14:29.331267
+22,2,Michael,Johnson,Housekeeping,2025-06-04 14:14:29.331267
+23,4,Lisa,Garcia,RN,2026-02-19 14:14:29.331267
+24,1,Sarah,Garcia,RN,2025-08-11 14:14:29.331267
+25,1,Jennifer,Williams,CNA,2025-06-20 14:14:29.331267
+26,3,Sarah,Brown,Dietary,2025-11-11 14:14:29.331267
+27,5,David,Smith,LPN,2026-01-06 14:14:29.331267
+28,1,John,Jones,Dietary,2026-03-26 14:14:29.331267
+29,5,John,Williams,LPN,2025-11-03 14:14:29.331267
+30,1,Jennifer,Johnson,Care Coordinator,2026-01-11 14:14:29.331267
+31,2,John,Johnson,Dietary,2025-04-03 14:14:29.331267
+32,4,John,Williams,Care Coordinator,2025-05-26 14:14:29.331267
+33,1,Jennifer,Garcia,RN,2025-05-07 14:14:29.331267
+34,5,Lisa,Johnson,RN,2026-03-18 14:14:29.331267
+35,2,Lisa,Brown,CNA,2025-06-14 14:14:29.331267
+36,1,Jennifer,Smith,Dietary,2026-01-03 14:14:29.331267
+37,3,David,Brown,Care Coordinator,2025-04-17 14:14:29.331267
+38,4,John,Johnson,LPN,2025-10-05 14:14:29.331267
+39,1,John,Jones,RN,2026-01-22 14:14:29.331267
+40,2,David,Smith,RN,2026-01-06 14:14:29.331267
