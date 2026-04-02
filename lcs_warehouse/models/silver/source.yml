@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: LCS_PRACTICE
+    schema: PUBLIC
+    tables:
+      - name: facilities
+      - name: residents
+      - name: staff
+      - name: admissions
+      - name: care_events
+      - name: billing

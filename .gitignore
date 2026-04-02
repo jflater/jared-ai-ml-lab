@@ -3,3 +3,4 @@
 
 # But track this file
 !.gitignore
+dbt-env/
