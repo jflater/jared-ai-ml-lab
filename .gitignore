@@ -4,3 +4,6 @@
 # But track this file
 !.gitignore
 dbt-env/
+logs/
+target/
+.user-yml
