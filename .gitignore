@@ -3,6 +3,10 @@
 
 # But track this file
 !.gitignore
+
+# Ignore
+frontend/
+backend/
 dbt-env/
 logs/
 target/

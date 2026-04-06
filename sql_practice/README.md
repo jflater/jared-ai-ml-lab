@@ -145,4 +145,21 @@ duckdb lcs_data.duckdb < load_lcs.data.sql
 duckdb lcs_data.duckdb < 03_ctes.sql
 ```
 
+# React Dashboard
+A React + FastAPI dashboard has been added to visualize these query outputs.
 
+### Setup & Run
+1. Install backend dependencies and run API:
+   ```bash
+   cd backend
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install fastapi uvicorn duckdb pydantic
+   uvicorn main:app --reload
+   ```
+2. Install frontend dependencies and run React:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
