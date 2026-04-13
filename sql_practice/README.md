@@ -8,7 +8,7 @@ The dataset is synthetic but modeled after real operational complexity. Six tabl
 
 ## Schema
 
-![ER Diagram](er_diagram.png)
+![ER Diagram](Untitled.png)
 
 Five operational entities feed into three transaction tables:
 
