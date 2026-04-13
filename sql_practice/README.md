@@ -1,6 +1,6 @@
 # sql_practice — LCS Senior Living Data
 
-My background is in agricultural research: multi-source datasets, quality control pipelines, and communicating findings across a wide audience. This project is a deliberate translation of those skills into the tools and patterns used in data engineering — SQL, Python, and DuckDB — using a domain I find genuinely interesting: operational data from senior living facilities.
+My background is in agricultural research: multi-source datasets, quality control pipelines, and communicating findings across a wide audience. This project is a deliberate translation of those skills into the tools and patterns used in data engineering — SQL, Python, and DuckDB.
 
 The dataset is synthetic but modeled after real operational complexity. Six tables, realistic foreign key relationships, and the kinds of messy questions that show up in actual analysis: who are the highest-acuity residents? which care staff carry the heaviest load? what does revenue look like for residents approaching discharge?
 
@@ -20,7 +20,7 @@ Five operational entities feed into three transaction tables:
 
 **`admissions`** records each facility admission with type and primary reason — a bridge table that supports tracking residents across multiple admissions or facility transfers.
 
-**`care_events`** is the most granular table: one row per care interaction (medication, assessment, activity), with the delivering staff member and duration. This is where window functions earn their keep.
+**`care_events`** is the most granular table: one row per care interaction (medication, assessment, activity), with the delivering staff member and duration.
 
 **`billing`** captures monthly charges per resident, broken into base and additional service fees, with payment status and date.
 
@@ -127,7 +127,7 @@ A multi-step CTE chain that computes care frequency, length of stay, a composite
 
 ## R-to-SQL comparison (`R_to_SQL.QMD`)
 
-A Quarto document placing dplyr and SQL side by side for the same analytical questions. The goal was to make the translation explicit — not just "here's the SQL" but "here's the dplyr I already know how to write, and here's the SQL that does the same thing." Rendered to `R_to_SQL.html`.
+A Quarto document placing dplyr and SQL side by side for the same analytical questions. The goal was to make the translation clear.
 
 ---
 
@@ -146,8 +146,6 @@ Output lands in `data/cms_provider_data.csv`.
 ```bash
 python ingest.py
 ```
-
-This was the first pipeline I built that felt like something you'd actually maintain — a real class with documented behavior, logging, and a validation step before the write.
 
 ---
 
