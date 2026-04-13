@@ -24,6 +24,9 @@ Five operational entities feed into three transaction tables:
 
 **`billing`** captures monthly charges per resident, broken into base and additional service fees, with payment status and date.
 
+This was generated with dbdiagram.io, I'm looking into more options that are
+more programmatic.  
+
 ---
 
 ## Generating the data
