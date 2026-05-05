@@ -1,8 +1,8 @@
 # sql_practice — LCS Senior Living Data
 
-My background is in agricultural research: multi-source datasets, quality control pipelines, and communicating findings across a wide audience. This project is a deliberate translation of those skills into the tools and patterns used in data engineering — SQL, Python, and DuckDB.
+My background is in agricultural research: multi-source datasets, quality control pipelines, and communicating findings across a wide audience. This project is a deliberate translation of those skills into the tools and patterns used in data engineering: SQL, Python, and DuckDB.
 
-The dataset is synthetic but modeled after real operational complexity. Six tables, realistic foreign key relationships, and the kinds of  questions that show up in actual analysis: who are the highest-acuity residents? Which care staff carry the heaviest load? What does revenue look like for residents approaching discharge?
+The dataset is synthetic but modeled after what I believe to be a real, potential organization. Six tables, foreign key relationships, and then the questions: who are the longest residents? who require the most complex care? what is the billing status?
 
 ## What This Project Demonstrates
 
@@ -20,21 +20,21 @@ This project reflects how I approach data systems: structure first, validation s
 
 ![ER Diagram](Untitled.png)
 
-Five operational entities feed into three transaction tables:
+Five operational entities into three transaction tables:
 
-**`facilities`** is the anchor. Every resident, staff member, and operational record ties back to a facility. This mirrors real senior living operations, where a management company oversees multiple sites with different types and capacities.
+**`facilities`** is the anchor. Every resident, staff member, and operational record ties back to a facility. This is trying to mirror real senior living operations, where a management company oversees multiple sites with different types and capacities.
 
 **`residents`** holds demographic and admission data. `care_level` and `monthly_rate` make this the primary driver for complexity and revenue analysis.
 
 **`staff`** tracks employees by role and hire date within a facility. The `staff_id` flows into `care_events`, which is where workload analysis lives.
 
-**`admissions`** records each facility admission with type and primary reason — a bridge table that supports tracking residents across multiple admissions or facility transfers.
+**`admissions`** records each facility admission with type and primary reason: a bridge table that supports tracking residents across multiple admissions or facility transfers.
 
 **`care_events`** is the most granular table: one row per care interaction (medication, assessment, activity), with the delivering staff member and duration.
 
 **`billing`** captures monthly charges per resident, broken into base and additional service fees, with payment status and date.
 
-This was generated with dbdiagram.io, I'm looking into more options that are
+This diagram was generated with dbdiagram.io, I'm looking into more options that are
 more programmatic.  
 
 ---
@@ -58,11 +58,11 @@ Identifies longest-tenured residents using `ROW_NUMBER()`, `RANK()`, and `LAG()`
 
 ### Exercise 2 — Ranking care load (`02_rank_care_events.sql`)
 
-Ranks residents by total care events using `DENSE_RANK()` over aggregated counts. Surfaces which residents require the most staff time — useful for staffing and acuity modeling. See `02_rank_care_events.r` for the dplyr translation.
+Ranks residents by total care events using `DENSE_RANK()` over aggregated counts. Shows which residents require the most staff time. See `02_rank_care_events.r` for the dplyr translation.
 
 ### Exercise 3 — Chained CTEs (`03_ctes.sql`)
 
-A multi-step CTE chain that computes care frequency, length of stay, a composite complexity score, and billing summaries in sequence — then joins them into a single ranked output of high-complexity, high-revenue residents. Output is in `03_ctes_output.md`. The R version is `03_ctes.r`.
+A multi-step CTE chain that computes care frequency, length of stay, a composite complexity score, and billing summaries in sequence and then joins them into a single ranked output of high-complexity, high-revenue residents. Output is in `03_ctes_output.md`. The R version is `03_ctes.r`.
 
 
 ### `03_ctes.sql`
@@ -146,15 +146,15 @@ A Quarto document placing dplyr and SQL side by side for the same analytical que
 
 ## CMS provider data pipeline (`ingest.py`)
 
-A Python ingestion script that queries the [CMS Provider Data API](https://data.cms.gov/provider-data) — the public dataset for nursing home and senior living providers.
+A Python ingestion script that queries the [CMS Provider Data API](https://data.cms.gov/provider-data) a public dataset for nursing home and senior living providers.
 
 Key design decisions:
 - **Class-based client** (`CMSProviderAPIClient`) with a persistent session and configurable batch size and timeout
-- **Paginated fetch** using SQL `LIMIT`/`OFFSET` queries against the DKAN SQL endpoint — handles large result sets without memory issues
+- **Paginated fetch** using SQL `LIMIT`/`OFFSET` queries against the DKAN SQL endpoint, it handles large result sets without memory issues
 - **Schema validation** on the returned DataFrame: checks for empty results and flags any column exceeding 90% null values before writing to disk
 - **Structured logging** at INFO level so pipeline progress is visible without print statements
 
-Output lands in `data/cms_provider_data.csv`.
+Output to `data/cms_provider_data.csv`.
 
 ```bash
 python ingest.py
