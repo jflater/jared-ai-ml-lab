@@ -4,6 +4,16 @@ My background is in agricultural research: multi-source datasets, quality contro
 
 The dataset is synthetic but modeled after real operational complexity. Six tables, realistic foreign key relationships, and the kinds of messy questions that show up in actual analysis: who are the highest-acuity residents? which care staff carry the heaviest load? what does revenue look like for residents approaching discharge?
 
+## What This Project Demonstrates
+
+- Translating messy, multi-source data into a structured relational model
+- Building reproducible data workflows (generation → ingestion → transformation)
+- Applying SQL patterns used in production (window functions, CTEs)
+- Thinking about data quality (validation, logging in ingestion)
+- Bridging analytical work (R) into data engineering workflows
+
+This project reflects how I approach data systems: structure first, validation second, then analysis.
+
 ---
 
 ## Schema
