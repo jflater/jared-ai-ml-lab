@@ -2,7 +2,7 @@
 
 My background is in agricultural research: multi-source datasets, quality control pipelines, and communicating findings across a wide audience. This project is a deliberate translation of those skills into the tools and patterns used in data engineering — SQL, Python, and DuckDB.
 
-The dataset is synthetic but modeled after real operational complexity. Six tables, realistic foreign key relationships, and the kinds of messy questions that show up in actual analysis: who are the highest-acuity residents? which care staff carry the heaviest load? what does revenue look like for residents approaching discharge?
+The dataset is synthetic but modeled after real operational complexity. Six tables, realistic foreign key relationships, and the kinds of  questions that show up in actual analysis: who are the highest-acuity residents? Which care staff carry the heaviest load? What does revenue look like for residents approaching discharge?
 
 ## What This Project Demonstrates
 
